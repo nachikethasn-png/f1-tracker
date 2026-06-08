@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Live Updates Hub</title>
+    <!-- This links your HTML to your design file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER: This holds the title and countdown -->
+    <header>
+        <h1>🏎️ F1 HUB</h1>
+        <div id="countdown-container" class="info-box">
+            <h2>Next Race Schedule</h2>
+            <p id="next-race-name">Loading next grand prix...</p>
+            <p id="next-race-date">-- : -- : --</p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT: The layout containers for standings -->
+    <main class="dashboard">
+        
+        <!-- Box 1: Driver Standings -->
+        <section class="standings-box">
+            <h2>Driver Standings</h2>
+            <div id="drivers-list">
+                <p class="loading">Fetching current driver points...</p>
+            </div>
+        </section>
+
+        <!-- Box 2: Team Standings -->
+        <section class="standings-box">
+            <h2>Constructor Standings</h2>
+            <div id="teams-list">
+                <p class="loading">Fetching team standings...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- This links your HTML to your JavaScript brain file -->
+    <script src="app.js"></script>
+</body>
+</html>
